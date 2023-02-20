@@ -12,6 +12,15 @@ public class BankAccountTester {
 		
 		bankAccount.depositMoney(500.00);
 		
+		bankAccount.chargeFees();
+		bankAccount.payInterest();
+		
+		bankAccount2.chargeFees();
+		bankAccount2.payInterest();
+		
+		bankAccount3.chargeFees();
+		bankAccount3.payInterest();
+		
 		System.out.printf(" %s has $%.2f \n", bankAccount.getOwner(), bankAccount.getBalance());
 		System.out.printf(" %s has $%.2f \n", bankAccount2.getOwner(), bankAccount2.getBalance());
 		System.out.printf(" %s has $%.2f \n", bankAccount3.getOwner(), bankAccount3.getBalance());

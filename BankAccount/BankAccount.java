@@ -33,5 +33,13 @@ public class BankAccount {
 		return balance;
 	}
 	
+	public void chargeFees() {
+		balance = balance - 0.001 * balance;
+	}
+	
+	public void payInterest() {
+		balance = balance + 0.03 * balance;
+	}
+	
 	
 }
